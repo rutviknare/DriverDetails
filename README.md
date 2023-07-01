@@ -1,3 +1,3 @@
-![Screenshot (21)](https://github.com/rutviknare/DriverDetails/assets/90822009/6d0eeb23-a117-4790-a693-89c3af12256f)
-![Screenshot (22)](https://github.com/rutviknare/DriverDetails/assets/90822009/889d04b8-b491-47e8-ab8a-2e84f7c10315)
-![Screenshot (23)](https://github.com/rutviknare/DriverDetails/assets/90822009/1859099c-468b-4622-9164-fa4523a0f59e)
+![Screenshot (24)](https://github.com/rutviknare/DriverDetails/assets/90822009/9d77631c-04e2-4d09-a96a-75c245487215)
+![Screenshot (25)](https://github.com/rutviknare/DriverDetails/assets/90822009/a66f6d7c-5a92-4628-aade-0dd4202b777c)
+![Screenshot (26)](https://github.com/rutviknare/DriverDetails/assets/90822009/9d5fe1fd-90a5-41f3-99dc-72afa4c3e3c8)
