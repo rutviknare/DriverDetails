@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom';
 
 function Add() {
   let backstyle = {
-    backgroundColor: "green",
+    backgroundColor: "rgb(18, 204, 16)",
     //  marginTop:"40pt",
     width: "900pt",
     height: "300pt",
@@ -15,7 +15,7 @@ function Add() {
     width: "200pt",
   };
   let body = {
-    backgroundColor: "green",
+    backgroundColor: "rgb(18, 204, 16)",
     height: "500pt",
   };
   let formstyle = {

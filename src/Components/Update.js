@@ -33,7 +33,7 @@ function Update() {
                   <td>{data.id_number}</td>
                   <td>{data.email}</td>
                   <td>{data.phone_no}</td>
-                  <button className='btn btn-success'>Update</button>
+                  <button className='btn btn-success' >Update</button>
                 </tr>
               ))
             }

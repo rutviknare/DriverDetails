@@ -2,6 +2,7 @@ import React from 'react'
 import add from "../images/add.png";
 import update from "../images/update.png";
 import deleteimg from "../images/delete.png";
+import show from "../images/show.png";
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -11,21 +12,27 @@ function Home() {
 
   let cardstyle1 = {
     width: "18rem",
-    marginLeft: "100pt",
+    marginLeft: "20pt",
     height: "270pt",
-    marginTop: "10%",
+    marginTop: "6%",
   };
   let cardstyle2 = {
     width: "18rem",
-    marginTop: "10%",
+    marginTop: "6%",
     height: "270pt",
-    marginLeft: "130pt",
+    marginLeft: "50pt",
   };
   let cardstyle3 = {
     width: "18rem",
-    marginLeft: "140pt",
+    marginLeft: "70pt",
     height: "270pt",
-    marginTop: "10%",
+    marginTop: "6%",
+  };
+  let cardstyle4 = {
+    width: "18rem",
+    marginLeft: "60pt",
+    height: "270pt",
+    marginTop: "6%",
   };
 
   let imageicon = {
@@ -36,7 +43,7 @@ function Home() {
       /* background-image: url(./images/cabcar.jpg); */
       backgroundColor: "rgb(18, 204, 16)",
       display: "flex",
-      height: "460pt"
+      height: "430pt"
   
   };
   return (
@@ -53,8 +60,7 @@ function Home() {
         <div className="card-body">
           <h5 className="card-title">Add Details</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            In this section you can add the details of the drivers and Click Below for Adding Details.
           </p>
           <button type="button" class="btn btn-primary " onClick={()=> navigate('/add')}>
             ADD
@@ -73,8 +79,7 @@ function Home() {
         <div className="card-body">
           <h5 className="card-title">Update Details</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          In this section you can update the details of the drivers and Click Below for Update Details.
           </p>
           <button type="button" class="btn btn-primary " onClick={()=> navigate('/update')}>
             {" "}
@@ -94,8 +99,8 @@ function Home() {
         <div className="card-body">
           <h5 className="card-title">Delete Details</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          In this section you can delete the details of the drivers and Click Below for delete Details.
+
           </p>
           <button type="button" class="btn btn-primary " onClick={()=> navigate('/delete')}>
             {" "}
@@ -103,8 +108,30 @@ function Home() {
           </button>
         </div>
       </div>
-    </div>
 
+      <div className="card" style={cardstyle4}>
+        <img
+          className="card-img-top"
+          src={show}
+          alt="Card image cap"
+          style={imageicon}
+        />
+        <div className="card-body">
+          <h5 className="card-title">Show Details</h5>
+          <p className="card-text"> 
+          In this section you can see all the details of the drivers and Click Below to see Details.
+
+          </p>
+          <button type="button" class="btn btn-primary " onClick={()=> navigate('/delete')}>
+            {" "}
+            SHOW
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+    
     <footer className="bg-light text-center text-lg-start">
       <div className="text-center p-3">
         © 2023 Copyright:

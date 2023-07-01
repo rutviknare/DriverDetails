@@ -4,9 +4,9 @@ function Header() {
     let titlename = {
         color: "",
         backgroundColor: "blue",
-        height: "50pt",
-        fontSize: "30pt",
-        fontfamily: "Droid Sans",
+        height: "70pt",
+        fontSize: "40pt",
+        fontfamily: "Times New Roman",
         fontWeight: "bold",
       };
   return (
