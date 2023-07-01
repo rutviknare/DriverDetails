@@ -34,7 +34,7 @@ function Home() {
   };
   let backimagestyle={
       /* background-image: url(./images/cabcar.jpg); */
-      backgroundColor: "rgb(12, 204, 16)",
+      backgroundColor: "rgb(18, 204, 16)",
       display: "flex",
       height: "460pt"
   
