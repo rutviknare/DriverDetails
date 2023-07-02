@@ -11,18 +11,19 @@ function Add() {
     height: "450pt",
   };
   let submitbtn = {
-    marginTop: "2%",
-    marginLeft: "36%",
+    marginTop: "5%",
+    marginLeft: "30%",
     width: "200pt",
   };
   let body = {
-    backgroundColor: "rgb(18, 204, 16)",
+    backgroundColor: "green",
     height: "450pt",
   };
   let formstyle = {
-    marginTop: "50pt",
+    marginLeft: "200pt",
+    marginRight:"200pt",
     backgroundColor: "black",
-    height: "250pt",
+    height: "450pt",
   };
 
  
@@ -49,10 +50,10 @@ function Add() {
   }
   
   return (
-    <div className="body" style={body}>
-      <div className="container" style={backstyle}>
+    <div className="justify-content-center align-item-center"  style={body}>
+      <div className="bg-dark rounded p-5" style={formstyle} >
         <h1 className="text-center">ADD Driver Details Section</h1>
-        <form style={formstyle} onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label for="exampleInputEmail1">Driver Name</label>
             <input

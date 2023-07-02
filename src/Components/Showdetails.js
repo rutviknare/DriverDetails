@@ -12,7 +12,7 @@ function Showdetails() {
   },[])
 
   let backstyle = {
-    backgroundColor: "rgb(18, 204, 16)",
+    backgroundColor: "green",
     //  marginTop:"40pt",
     width: "100%",
     height: "450pt",

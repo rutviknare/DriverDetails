@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
     let titlename = {
         color: "",
-        backgroundColor: "blue",
+        backgroundColor: "rgb(44, 102, 169)",
         height: "70pt",
         fontSize: "40pt",
-        fontfamily: "Times New Roman",
+         fontFamily: "Georgia",
         fontWeight: "bold",
         marginLeft:"300pt"
       };
@@ -19,12 +19,12 @@ function Header() {
       let backdiv={
         display:"flex",
         // marginLeft:"300pt",
-        backgroundColor:"blue"
+        backgroundColor:"rgb(44, 102, 169)"
       };
 
   return (
     <div style={backdiv}>
-       <div className="text-center" style={titlename}>
+       <div lassName="text-center" style={titlename}>
          Cab Management Project
     </div>
     </div>

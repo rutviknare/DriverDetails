@@ -9,21 +9,22 @@ function Updateform() {
     backgroundColor: "rgb(18, 204, 16)",
     //  marginTop:"40pt",
     width: "900pt",
-    height: "300pt",
+    height: "450pt",
   };
   let submitbtn = {
-    marginTop: "2%",
-    marginLeft: "36%",
+    marginTop: "5%",
+    marginLeft: "30%",
     width: "200pt",
   };
   let body = {
-    backgroundColor: "rgb(18, 204, 16)",
-    height: "500pt",
+    backgroundColor: "green",
+    height: "450pt",
   };
   let formstyle = {
-    marginTop: "100pt",
-    backgroundColor: "yellow",
-    height: "250pt",
+    marginLeft: "200pt",
+    marginRight:"200pt",
+    backgroundColor: "black",
+    height: "450pt",
   };
   const [name, setName] = useState('');
   //const [id, setId] = useState('');
@@ -47,10 +48,9 @@ function Updateform() {
 
   }
   return (
-    <div className="body" style={body}>
-      <div className="container" style={backstyle}>
-        <h1 className="text-center">Update Driver Details Section</h1>
-        <form style={formstyle} onSubmit={handleSubmit}>
+    <div className="justify-content-center align-item-center" style={body}>
+      <div className="bg-dark rounded p-5" style={formstyle}>
+        <form  onSubmit={handleSubmit}>
           <div className="form-group">
             <label for="exampleInputEmail1">Driver Name</label>
             <input
@@ -99,7 +99,7 @@ function Updateform() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div> */}
-          <button className="btn btn-dark" style={submitbtn}>
+          <button className="btn btn-danger" style={submitbtn}>
             Update
           </button>
         </form>
