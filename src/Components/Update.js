@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {useNavigate} from 'react-router-dom';
+import {Link,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 function Update() {
 
@@ -33,7 +33,8 @@ function Update() {
                   <td>{data.id_number}</td>
                   <td>{data.email}</td>
                   <td>{data.phone_no}</td>
-                  <button className='btn btn-success' >Update</button>
+                  <button onClick={()=>navigate(`/update/updateform/${data.id_number}`)} className='btn btn-success' >Update</button>
+                  {/* <Link  to={`/update/updateform/${data.id_number}`} className='btn btn-success' >Update</Link> */}
                 </tr>
               ))
             }
