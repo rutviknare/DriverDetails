@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import {useNavigate} from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 function Add() {
   let backstyle = {
     backgroundColor: "rgb(18, 204, 16)",
     //  marginTop:"40pt",
     width: "900pt",
-    height: "300pt",
+    height: "450pt",
   };
   let submitbtn = {
     marginTop: "2%",
@@ -16,13 +17,15 @@ function Add() {
   };
   let body = {
     backgroundColor: "rgb(18, 204, 16)",
-    height: "500pt",
+    height: "450pt",
   };
   let formstyle = {
-    marginTop: "100pt",
-    backgroundColor: "yellow",
+    marginTop: "50pt",
+    backgroundColor: "black",
     height: "250pt",
   };
+
+ 
   const [name, setName] = useState('');
   const [id, setId] = useState('');
   const [email, setEmail] = useState('');
@@ -33,11 +36,18 @@ function Add() {
     event.preventDefault();
     axios.post('http://localhost:8081/add',{name,id,email,phone})
     .then(res=>{
-      console.log(res);
+      // console.log(res);
+      Swal.fire(
+        'Successfully Added!',
+        'You clicked the button!',
+        'success'
+      )
+    
       navigate("/");
     }).catch(err=>console.log(err));
 
   }
+  
   return (
     <div className="body" style={body}>
       <div className="container" style={backstyle}>
@@ -50,7 +60,7 @@ function Add() {
               className="form-control"
               id="drivername"
               aria-describedby="emailHelp"
-              placeholder="Enter email"
+              placeholder="Enter Name"
               onChange={e=>setName(e.target.value)}
             />
           </div>
@@ -91,7 +101,7 @@ function Add() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div> */}
-          <button className="btn btn-dark" style={submitbtn}>
+          <button className="btn btn-success" style={submitbtn}>
             Submit
           </button>
         </form>

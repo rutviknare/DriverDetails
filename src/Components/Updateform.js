@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 import {useNavigate, useParams} from 'react-router-dom';
+import Swal from 'sweetalert2'
+
 
 function Updateform() {
   let backstyle = {
@@ -34,7 +36,12 @@ function Updateform() {
     event.preventDefault();
     axios.put('http://localhost:8081/update/updateform/'+id,{name,email,phone})
     .then(res=>{
-      console.log(res);
+    //   console.log(res);
+    Swal.fire(
+        'Successfully Updated!',
+        'You clicked the button!',
+        'success'
+      )
       navigate('/update');
     }).catch(err=>console.log(err));
 

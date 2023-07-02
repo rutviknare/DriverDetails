@@ -43,7 +43,7 @@ function Home() {
       /* background-image: url(./images/cabcar.jpg); */
       backgroundColor: "rgb(18, 204, 16)",
       display: "flex",
-      height: "430pt"
+      height: "450pt"
   
   };
   return (
@@ -122,24 +122,13 @@ function Home() {
           In this section you can see all the details of the drivers and Click Below to see Details.
 
           </p>
-          <button type="button" class="btn btn-primary " onClick={()=> navigate('/delete')}>
+          <button type="button" class="btn btn-primary " onClick={()=> navigate('/showdetails')}>
             {" "}
             SHOW
           </button>
         </div>
       </div>
-
-
     </div>
-    
-    <footer className="bg-light text-center text-lg-start">
-      <div className="text-center p-3">
-        © 2023 Copyright:
-        <a className="text-dark" href="">
-          AFour Hackathon
-        </a>
-      </div>
-    </footer>
   </>
   )
 }

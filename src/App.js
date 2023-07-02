@@ -6,6 +6,9 @@ import Update from "./Components/Update";
 import Delete from "./Components/Deletecomponent";
 import Header from "./Components/Header";
 import Updateform from './Components/Updateform';
+import Showdetails from './Components/Showdetails';
+import Footer from './Components/Footer';
+
 const App = () => {
   return (
     <div className="App">
@@ -17,9 +20,11 @@ const App = () => {
         <Route path="/update" element={<Update />} />
         <Route path="/update/updateform/:id" element={<Updateform/>}/>
         <Route path="/delete" element={<Delete />} />
+        <Route path="/showdetails" element={<Showdetails/>}/>
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </Router>
+    <Footer/>
   </div>
   )
 }
