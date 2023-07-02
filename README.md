@@ -1,3 +1,4 @@
+![Screenshot (21)](https://github.com/rutviknare/DriverDetails/assets/90822009/1603b14c-92fa-43f2-9985-184256ff8e1e)
 ![Screenshot (27)](https://github.com/rutviknare/DriverDetails/assets/90822009/d047bc9b-8400-4229-8b1a-692bdaf75cdc)
 ![Screenshot (28)](https://github.com/rutviknare/DriverDetails/assets/90822009/5c4882e9-af3e-4da6-9161-f8e871822849)
 ![Screenshot (29)](https://github.com/rutviknare/DriverDetails/assets/90822009/680e9521-75a8-4763-8e7d-98aee99bfbce)
